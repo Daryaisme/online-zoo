@@ -1,0 +1,73 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/fonts/Roboto-Regular.ttf);
+}
+#main_page {
+    width: 1600px;
+    font-family: 'Roboto';
+}
+#header {
+    background: #000000;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1160px;
+    padding: 14px 0;
+}
+.logo {
+    position: relative;
+    margin: 0;
+    width: 82px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+h1 {
+    position: absolute;
+    width: 72.49px;
+    height: 44.91px;
+    left: 4.75px;
+    top: 3.55px;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.logo a img {
+    position: absolute;
+    left: 9.5px;
+    top: 24.44px;
+}
+#text_of_header {
+    width: 472px;
+    margin-left: 63px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px; 
+}
+#text_of_header p {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#text_of_header a, .container a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+#text_of_header a:hover, a[id="design_by"]:hover {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#design_by {
+    width: 105px;
+    margin-left: 438px;
+}
