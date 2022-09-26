@@ -12,13 +12,13 @@
 }
 #header {
     background: #000000;
+    padding: 14px 0;
 }
 .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 1160px;
-    padding: 14px 0;
 }
 .logo {
     position: relative;
@@ -70,4 +70,63 @@ h1 {
 #design_by {
     width: 105px;
     margin-left: 438px;
+}
+#second_block {
+    display: flex;
+    background-image: url(../../assets/images/GiantPanda.svg);
+    background-repeat: no-repeat;
+    background-position-y: -80px;
+}
+#second_block .container {
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
+    padding-bottom: 100px;
+}
+#circle {
+    position: absolute;
+    top: 92px;
+    margin: 0;
+    width: 465px;
+    height: 465px;
+    border-radius: 50%;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+#text_in_the_circle {
+    z-index: 1;
+    width: 500.31px;
+    height: 400px;
+    font-weight: 700;
+    font-size: 106.496px;
+    line-height: 83px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 86px 0 0 73px;
+}
+.button {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+}
+#content .button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 298px;
+    height: 54px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    height: 588px;
+    width: 573px;
+    margin: 0;
 }
