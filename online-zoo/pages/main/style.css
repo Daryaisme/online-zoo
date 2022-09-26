@@ -10,15 +10,17 @@
     width: 1600px;
     font-family: 'Roboto';
 }
+.container {
+    width: 1160px;
+}
 #header {
     background: #000000;
     padding: 14px 0;
 }
-.container {
+#header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 1160px;
 }
 .logo {
     position: relative;
@@ -40,7 +42,7 @@ h1 {
     text-align: center;
     color: #FFFFFF;
 }
-.logo a img {
+.logo img {
     position: absolute;
     left: 9.5px;
     top: 24.44px;
@@ -58,14 +60,12 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-#text_of_header a, .container a {
+#header a {
     color: #FFFFFF;
     text-decoration: none;
 }
-#text_of_header a:hover, a[id="design_by"]:hover {
-    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+#header a:hover {
+    text-decoration: underline;
 }
 #design_by {
     width: 105px;
@@ -102,13 +102,11 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 86px 0 0 73px;
+    margin: 74px 0 0 73px;
 }
-.button {
+#second_block .content a {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
-}
-#content .button {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -120,8 +118,10 @@ h1 {
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    text-decoration: none;
+    margin-left: 176px;
 }
-#content {
+#second_block .content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
