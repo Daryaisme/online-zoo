@@ -166,6 +166,10 @@ h1 {
     background-position-y: 100%;
     padding-bottom: 100px;
 }
+#pets .container {
+    width: 1158px;
+    margin: 0;
+}
 #pets .content {
     display: flex;
     flex-direction: column;
@@ -244,4 +248,26 @@ h1 {
     text-decoration: none;
     margin: 80px 431px 0 431px;
 }
-
+#left_arrow, #right_arrow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 50%;
+    height: 62px;
+    width: 62px;
+}
+#left_arrow img, #right_arrow img {
+    filter: invert();
+}
+#pets a {
+    width: 62px;
+    height: 62px;
+    margin-bottom: 135px;
+}
+#for_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1322px;
+}
