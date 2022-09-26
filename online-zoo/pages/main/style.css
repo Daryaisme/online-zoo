@@ -130,3 +130,32 @@ h1 {
     width: 573px;
     margin: 0;
 }
+#backstage {
+    background-image: url(../../assets/images/flower_foto1.png);
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 12px;
+}
+#backstage .content {
+    display: flex;
+    flex-direction: row;
+    height: 403px;
+    padding: 140px 0;
+}
+#text_of_the_backstage {
+    margin-left: 87px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333B41;
+}
+.subtitle {
+    font-size: 24px;
+    line-height: 29px;
+    margin: 54px 0 34px 0;
+}
+.caption {
+    font-size: 48px;
+    line-height: 58px;
+    margin: 0 0 20px 0;
+}
