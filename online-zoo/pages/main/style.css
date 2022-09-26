@@ -159,3 +159,89 @@ h1 {
     line-height: 58px;
     margin: 0 0 20px 0;
 }
+#pets {
+    background-image: url(../../assets/images/palm_foto.png), url(../../assets/images/strelitzia.png);
+    background-repeat: no-repeat;
+    background-position-x: 0, 100%;
+    background-position-y: 100%;
+    padding-bottom: 100px;
+}
+#pets .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1158px;
+    height: 872px;
+}
+.row_of_pets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+.pet {
+    position: relative;
+    width: 366px;
+    height: 426px;
+    margin: 0;
+    background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    border-radius: 5px;
+}
+.back {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 364px;
+    height: 424px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+.back img {
+    transform: scale(1.01);
+    border-radius: 5px;
+    margin-top: 2px;
+}
+.explanation {
+    color: #000000;
+    display: flex;
+    align-items: center;
+}
+.text_of_explanation {
+    width: 294px;
+    height: 38px;
+    margin: 8px 0 14px 16px;
+}
+.name {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+.matherland {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+}
+#pets .container a {
+    background: #FE9013;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 298px;
+    height: 54px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 80px 431px 0 431px;
+}
+
