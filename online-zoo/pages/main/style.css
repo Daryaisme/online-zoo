@@ -190,25 +190,14 @@ h1 {
     margin: 0;
     background: linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
     border-radius: 5px;
+    border: solid 0.7px transparent;
+    background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
 }
-.back {
-    position: absolute;
-    left: 1px;
-    top: 1px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 364px;
-    height: 424px;
-    background: #FFFFFF;
-    border-radius: 5px;
-    margin: 0;
-    padding: 0;
-}
-.back img {
-    transform: scale(1.01);
-    border-radius: 5px;
-    margin-top: 2px;
+.pet a {
+    width: 366px;
+    height: 366px;
 }
 .explanation {
     color: #000000;
@@ -231,7 +220,7 @@ h1 {
     font-size: 15px;
     line-height: 18px;
 }
-#pets .container a {
+#for_arrow .container > a {
     background: #FE9013;
     border-radius: 25px;
     display: flex;
@@ -260,7 +249,7 @@ h1 {
 #left_arrow img, #right_arrow img {
     filter: invert();
 }
-#pets a {
+#for_arrow > a {
     width: 62px;
     height: 62px;
     margin-bottom: 135px;
@@ -270,4 +259,8 @@ h1 {
     align-items: center;
     justify-content: space-between;
     width: 1322px;
+}
+.explanation a {
+    text-decoration: none;
+    color: #000000;
 }
