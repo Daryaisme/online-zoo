@@ -195,7 +195,7 @@ h1 {
     background-origin: border-box;
     background-clip: padding-box, border-box;
 }
-.pet a {
+.pet > a {
     width: 366px;
     height: 366px;
 }
