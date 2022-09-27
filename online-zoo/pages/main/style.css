@@ -194,10 +194,30 @@ h1 {
     background-image: linear-gradient(#ffffff, #ffffff), linear-gradient(113.96deg, #f9804b 1.49%, #fe9013 101.44%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
+    overflow: hidden;
 }
-.pet > a {
+.pet {
     width: 366px;
-    height: 366px;
+    height: 426px;
+    text-decoration: none;
+}
+a[class="pet"]:hover .explanation {
+    height: 426px;
+    background: rgba(0, 0, 0, 0.5);
+    transform: translateY(-370px);
+    transition: all 0.5s ease;
+    color: #FFFFFF;
+}
+a[class="pet"]:hover .explanation img, a[class="pet"]:hover .explanation .motherland {
+    display: none;
+}
+a[class="pet"]:hover .explanation .name {
+    font-size: 36px;
+    margin-top: 20px;
+}
+a[class="pet"]:hover img {
+    transform: scale(1.35);
+    transition-duration: 0.5s;
 }
 .explanation {
     color: #000000;
@@ -236,6 +256,7 @@ h1 {
     color: #FFFFFF;
     text-decoration: none;
     margin: 80px 431px 0 431px;
+    transition: all 0.5s ease;
 }
 #left_arrow, #right_arrow {
     display: flex;
@@ -245,6 +266,10 @@ h1 {
     border-radius: 50%;
     height: 62px;
     width: 62px;
+}
+#for_arrow a:hover #left_arrow, #for_arrow a:hover #right_arrow {
+    background: #4B9200;
+    transition: all 0.5s ease;
 }
 #left_arrow img, #right_arrow img {
     filter: invert();
@@ -260,7 +285,7 @@ h1 {
     justify-content: space-between;
     width: 1322px;
 }
-.explanation a {
-    text-decoration: none;
-    color: #000000;
+#pets .container > a:hover {
+    background: #E47209;
+    transition: all 0.5s ease;
 }
