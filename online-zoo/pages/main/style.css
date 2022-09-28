@@ -7,7 +7,6 @@
     src: url(../../assets/fonts/Roboto-Regular.ttf);
 }
 #main_page {
-    width: 1600px;
     font-family: 'Roboto';
 }
 .container {
@@ -65,7 +64,9 @@ h1 {
     text-decoration: none;
 }
 #header a:hover {
-    text-decoration: underline;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #design_by {
     width: 105px;
@@ -105,6 +106,9 @@ h1 {
     margin: 74px 0 0 73px;
 }
 #second_block .content a {
+    margin-left: 176px;
+}
+a[class="button"] {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
     display: flex;
@@ -119,7 +123,15 @@ h1 {
     text-transform: uppercase;
     color: #FFFFFF;
     text-decoration: none;
-    margin-left: 176px;
+}
+a[class="button"]:hover {
+    background: #E47209;
+}
+a[class="button"]:active {
+    background: #4B9200;
+}
+a[class="button"]:disabled {
+    background: #767474;
 }
 #second_block .content {
     display: flex;
@@ -241,22 +253,7 @@ a[class="pet"]:hover img {
     line-height: 18px;
 }
 #for_arrow .container > a {
-    background: #FE9013;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 298px;
-    height: 54px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22.4px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    text-decoration: none;
     margin: 80px 431px 0 431px;
-    transition: all 0.5s ease;
 }
 #left_arrow, #right_arrow {
     display: flex;
@@ -267,9 +264,8 @@ a[class="pet"]:hover img {
     height: 62px;
     width: 62px;
 }
-#for_arrow a:hover #left_arrow, #for_arrow a:hover #right_arrow {
+#for_arrow a:active #left_arrow, #for_arrow a:active #right_arrow {
     background: #4B9200;
-    transition: all 0.5s ease;
 }
 #left_arrow img, #right_arrow img {
     filter: invert();
@@ -285,7 +281,87 @@ a[class="pet"]:hover img {
     justify-content: space-between;
     width: 1322px;
 }
-#pets .container > a:hover {
-    background: #E47209;
-    transition: all 0.5s ease;
+#fifth_block {
+    background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+    opacity: 0.9;
+    padding: 69px 0 100px 0;
+}
+#bg {
+    background: rgba(253, 253, 255, 0.52);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    color: #333B41;
+    padding: 41px 54px 59px 99px;
+}
+#title {
+    width: 463px;
+    height: 58px;
+    margin-bottom: 30px;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    color: #FE9013;
+}
+#subhead {
+    width: 844px;
+    height: 29px;
+    margin-bottom: 40px;
+    margin-left: 0;
+    font-size: 24px;
+    line-height: 29px;
+}
+#bold {
+    width: 1007px;
+    height: 21px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+}
+#text {
+    width: 863px;
+    height: 42px;
+    margin-left: 0;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+#text a {
+    color: #333B41;
+    text-decoration: underline;
+    text-decoration-color: #FE9013;
+}
+#bg h3 {
+    width: 209px;
+    height: 47px;
+    font-size: 36px;
+    line-height: 47px;
+    margin-bottom: 40px;
+}
+#pictures, #caption_under {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 764px;
+    margin-bottom: 30px;
+}
+#caption_under p {
+    width: 168px;
+    height: 46px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+}
+#image {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 168px;
+    height: 168px;
+    margin: 0;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: 1px #F9804B solid;
 }
