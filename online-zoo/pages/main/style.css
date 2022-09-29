@@ -41,6 +41,18 @@ h1 {
     text-align: center;
     color: #FFFFFF;
 }
+.footer .logo p {
+    position: absolute;
+    width: 72.49px;
+    height: 44.91px;
+    left: 4.75px;
+    top: 3.55px;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
 .logo img {
     position: absolute;
     left: 9.5px;
