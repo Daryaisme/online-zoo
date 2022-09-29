@@ -1,0 +1,79 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../../assets/fonts/Roboto-Regular.ttf);
+}
+#donate_page {
+    font-family: 'Roboto';
+}
+.container {
+    width: 1160px;
+}
+.header {
+    background: #000000;
+    padding: 14px 0;
+}
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    position: relative;
+    margin: 0;
+    width: 82px;
+    height: 52px;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+h1 {
+    position: absolute;
+    width: 72.49px;
+    height: 44.91px;
+    left: 4.75px;
+    top: 3.55px;
+    font-weight: 400;
+    font-size: 19.0145px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.logo img {
+    position: absolute;
+    left: 9.5px;
+    top: 24.44px;
+}
+.text_of_header, .text_of_footer {
+    width: 472px;
+    margin-left: 63px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 16px; 
+}
+.text_of_header p, .text_of_footer p {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.header a, .footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.text_of_header a:hover, a[id="design_by"]:hover, .text_of_footer a:hover {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#design_by {
+    width: 105px;
+    margin-left: 438px;
+}
+#big_image {
+    height: 390px;
+    background-image: url(../../assets/images/GiantPanda.svg);
+    background-position-y: -200px;
+}
