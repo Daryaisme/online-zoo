@@ -62,12 +62,18 @@ h1 {
     top: 24.44px;
 }
 .text_of_header, .text_of_footer {
-    width: 472px;
-    margin-left: 63px;
     display: flex;
     justify-content: space-between;
     font-weight: 500;
     font-size: 16px; 
+}
+.text_of_header {
+    width: 472px;
+    margin-left: 63px;
+}
+.text_of_footer {
+    width: 362px;
+    margin-left: 0;
 }
 .text_of_header p, .text_of_footer p {
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -158,7 +164,7 @@ a[class="button"]:disabled {
     flex-direction: column;
     justify-content: space-between;
     align-self: flex-end;
-    height: 588px;
+    height: 600px;
     width: 573px;
     margin: 0;
 }
@@ -365,7 +371,12 @@ a[class="pet"]:hover img {
     justify-content: space-between;
     align-items: center;
     width: 764px;
+}
+#pictures {
     margin-bottom: 30px;
+}
+#caption_under {
+    margin-bottom: 60px;
 }
 #caption_under p {
     width: 168px;
@@ -538,7 +549,7 @@ a[class="pet"]:hover img {
     padding: 40px 0 50px 0;
 }
 .column_1 {
-    width: 298px;
+    width: 400px;
 }
 .column_1 .logo {
     margin-bottom: 68px;
@@ -667,7 +678,7 @@ form {
         margin-left: 259px;
     }
     #second_block .container {
-        padding-bottom: 47px;
+        padding-bottom: 45px;
     }
     #circle {
         top: -11px;
@@ -747,12 +758,12 @@ form {
     a[id="left"] {
         position: absolute;
         top: 368px;
-        left: 400px;
+        left: 332px;
     }
     a[id="right"] {
         position: absolute;
         top: 368px;
-        left: 500px;
+        left: 565px;
     }
     #for_arrow {
         position: relative;
@@ -798,7 +809,7 @@ form {
         display: none;
     }
     #testimonials .container {
-        margin-top: 100px;
+        margin-top: 98px;
     }
     #testimonials .container > p {
         line-height: 46.8px;
@@ -807,7 +818,7 @@ form {
     #reviews {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 21px;
+        margin-bottom: 18px;
     }
     .review:nth-child(4) {
         display: none;
@@ -838,21 +849,27 @@ form {
         background-position-y: 122%;
         padding-bottom: 140px;
         background-size: 200px 300px;
-    }    .footer .container {
-        display: flex;
     }
+    .column_1 {
+        width: 298px;
+        margin-left: 0;
+    }  
     .column_2 {
-        margin-left: -10px;
+        margin-left: 0;
     }
     .text_of_footer {
         width: 332px;
-        margin-left: 0;
+        margin-left: -20px;
     }
     .column_3 {
-        margin-left: -77px;
+        margin-left: -130px;
     }
     .column_3 h3 {
         line-height: 28.8px;
+    }
+    .alisa_samborskaya {
+        align-self: flex-end;
+        top: calc(100% - 50px);
     }
 }
 
@@ -921,7 +938,14 @@ form {
         background-position-y: -34px;
     }
     #second_block .container {
-        padding-bottom: 40px;
+        padding-bottom: 35px;
+    }
+    #second_block .container .content {
+        height: 300px;
+        justify-content: space-between;
+    }
+    #second_block .container .content a {
+        margin-top: -20px;
     }
     #circle {
         position: absolute;
@@ -935,7 +959,7 @@ form {
         height: 204.38px;
         font-size: 54.29px;
         line-height: 40.72px;
-        margin: 37.81px -8.5px 0 37.3px;
+        margin: 47.81px -8.5px 0 37.3px;
     }
     .container_for_img {
         display: none;
@@ -975,7 +999,8 @@ form {
         line-height: 57.6px;
     }
     #pets {
-        padding-top: 20px;
+        padding-top: 25px;
+        padding-bottom: 100px;
     }
     #pets .content {
         width: 600px;
@@ -1081,14 +1106,19 @@ form {
         height: 47px;
         font-size: 36px;
         line-height: 46.8px;
-        margin-bottom: 20px;
+        margin-bottom: 18px;
     }
     #pictures, #caption_under {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 588px;
-        margin-bottom: 30px;
+    }
+    #pictures {
+        margin-bottom: 28px;
+    }
+    #caption_under {
+        margin-bottom: 40px;
     }
     #pictures > img {
         display: none;
@@ -1139,6 +1169,7 @@ form {
         display: none;
     }
     #testimonials .container a {
+        width: 240px;
         margin: 0 auto;
     }
     #testimonials {
@@ -1188,7 +1219,7 @@ form {
         height: 164px;
         margin: 0;
         position: absolute;
-        left: 186%;
+        left: 192%;
         top: 0;
         z-index: 1;
     }
@@ -1206,8 +1237,8 @@ form {
         width: 298px;
         margin-left: 0;
         position: absolute;
-        top: -16px;
-        left: -292px;
+        top: -20px;
+        left: -320px;
     }
     .column_3 {
         width: 228px;
@@ -1288,8 +1319,7 @@ form {
         background-position-y: 0;
     }
     #second_block .container {
-        display: flex;
-        flex-direction: column;
+        height: 152px;
     }
     #circle {
         align-self: flex-end;
@@ -1315,8 +1345,6 @@ form {
         height: 146.83px;
     }
     #backstage {
-        background-image: url(../../assets/images/flower_foto1.png);
-        background-repeat: no-repeat;
         background-position-x: 111%;
         background-position-y: 12px;
         background-size: 60px 217px;
@@ -1331,7 +1359,7 @@ form {
         flex-direction: row;
         position: relative;
         height: 388px;
-        padding: 30px 0;
+        padding: 34px 0;
     }
     #text_of_the_backstage {
         line-height: 22.4px;
@@ -1339,7 +1367,7 @@ form {
     .subtitle {
         font-size: 24px;
         line-height: 28.8px;
-        margin: 20px 0 10px 0;
+        margin: 20px 0 6px 0;
     }
     .caption {
         font-size: 24px;
@@ -1347,18 +1375,14 @@ form {
         margin: 0 0 10px 0;
     }
     #pets {
-        background-image: url(../../assets/images/palm_foto.png), url(../../assets/images/strelitzia.png);
-        background-repeat: no-repeat;
-        background-position-x: 0, 100%;
-        background-position-y: 100%;
         background-size: 58px 72px, 80px 63px;
-        padding-top: 40px;
+        padding-top: 0;
         padding-bottom: 60px;
     }
     #pets .content {
         width: 285.24px;
         height: 1388px;
-        margin-bottom: 20px;
+        margin-bottom: 22px;
     }
     .row_of_pets {
         flex-direction: column;
@@ -1449,23 +1473,27 @@ form {
     #pictures {
         flex-direction: column;
         width: 168px;
-        height: 715px;
+        height: 661px;
         margin-bottom: 93px;
+    }
+    #caption_under {
+        margin-bottom: 0;
     }
     #caption_under p {
         position: absolute;
         width: 168px;
+        height: 537px;
     }
     #caption1 {
-        top: 33.5%;
+        top: 35.5%;
         left: 66px;
     }
     #caption2 {
-        top: 58%;
+        top: 59%;
         left: 66px;
     }
     #caption3 {
-        top: 82%;
+        top: 83%;
         left: 66px;
     }
     .green_arrow {
@@ -1474,12 +1502,12 @@ form {
     }
     .arrow1 {
         position: absolute;
-        top: 35.5%;
+        top: 36.8%;
         left: 69%;
     }
     .arrow2 {        
         position: absolute;
-        top: 59.5%;
+        top: 60.8%;
         left: 69%;
     }
     #testimonials .container {
@@ -1542,8 +1570,8 @@ form {
         justify-content: space-between;
         position: absolute;
         top: 55px;
-        left: 50px;
-        width: 194px;
+        left: 53px;
+        width: 224px;
         height: 26px;
         margin: 0;
     }
