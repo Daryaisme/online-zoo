@@ -6,9 +6,9 @@
     font-family: Roboto;
     src: url(../../assets/fonts/Roboto-Regular.ttf);
 }
-/* body, html {
+body, html {
     overflow-x: hidden;
-} */
+}
 #donate_page {
     font-family: 'Roboto';
 }
@@ -1199,7 +1199,7 @@ form {
     }
     .text_of_footer {
         width: 290px;
-        left: 10px;
+        left: 0;
     }
     .alisa_samborskaya {
         position: absolute;
