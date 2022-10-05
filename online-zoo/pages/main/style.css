@@ -1325,11 +1325,11 @@ form {
         background-position-y: 0;
     }
     #second_block .container {
-        height: 152px;
+        height: 185px;
     }
     #circle {
         align-self: flex-end;
-        top: 22.17px;
+        top: 57.17px;
         right: 30px;
         margin: 0;
         width: 119.09px;
@@ -1341,7 +1341,7 @@ form {
         height: 106px;
         font-size: 27.21px;
         line-height: 21px;
-        margin: 41.12px 0 0 18.7px;
+        margin: 74.12px 0 0 18.7px;
     }
     #second_block .content a[class="button"] {
         display: none;
@@ -1367,18 +1367,28 @@ form {
         height: 388px;
         padding: 34px 0;
     }
+    #backstage .container {
+        height: 458px;
+    }
+    #backstage .content {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        height: 388px;
+        padding: 34px 0;
+    }
     #text_of_the_backstage {
         line-height: 22.4px;
     }
     .subtitle {
         font-size: 24px;
         line-height: 28.8px;
-        margin: 20px 0 6px 0;
+        margin: 18px 0 12px 0;
     }
     .caption {
         font-size: 24px;
         line-height: 28.8px;
-        margin: 0 0 10px 0;
+        margin: -5px 0 8px 0;
     }
     #pets {
         background-size: 58px 72px, 80px 63px;
