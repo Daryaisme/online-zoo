@@ -1605,7 +1605,7 @@ form {
     }
     .text_of_footer {
         width: 300px;
-        left: 12px;
+        left: 0;
     }
     .alisa_samborskaya {
         position: absolute;
