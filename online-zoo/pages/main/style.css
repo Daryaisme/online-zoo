@@ -944,7 +944,7 @@ form {
         padding-bottom: 35px;
     }
     #second_block .container .content {
-        height: 300px;
+        height: 334px;
         justify-content: space-between;
     }
     #second_block .container .content a {
@@ -953,7 +953,7 @@ form {
     #circle {
         position: absolute;
         right: 50px;
-        top: 10.23px;
+        top: 43px;
         width: 237.6px;
         height: 237.6px;
     }
@@ -962,7 +962,7 @@ form {
         height: 204.38px;
         font-size: 54.29px;
         line-height: 40.72px;
-        margin: 47.81px -8.5px 0 37.3px;
+        margin: 83.81px -8.5px 0 37.3px;
     }
     .container_for_img {
         display: none;
@@ -996,7 +996,7 @@ form {
     }
     .subtitle {
         line-height: 28.8px;
-        margin: 30px 0 20px 0;
+        margin: 32px 0 20px 0;
     }
     .caption {
         line-height: 57.6px;
