@@ -6,9 +6,9 @@
     font-family: Roboto;
     src: url(../../assets/fonts/Roboto-Regular.ttf);
 }
-/* body, html {
+body, html {
     overflow-x: hidden;
-} */
+}
 #main_page {
     font-family: 'Roboto';
 }
@@ -878,7 +878,10 @@ form {
         width: 600px;
     }
     .header {
+        width: 100%;
         padding: 2.5px 0;
+        position: fixed;
+        z-index: 100;
     }
     .logo {
         border: none;
@@ -1256,7 +1259,10 @@ form {
         width: 300px;
     }
     .header {
+        width: 100%;
         padding: 2.5px 0;
+        position: fixed;
+        z-index: 100;
     }
     .logo {
         border: none;
