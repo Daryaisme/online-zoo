@@ -873,7 +873,7 @@ form {
     }
 }
 
-@media (max-width: 999px) {
+@media (max-width: 999px) { 
     .container {
         width: 600px;
     }
@@ -882,6 +882,19 @@ form {
         padding: 2.5px 0;
         position: fixed;
         z-index: 100;
+    }
+    .white_container {
+        height: 289px;
+        background: #FFFFFF;
+        padding: 10px 0 40px 10px;
+    }
+    .burger_container {
+        width: 104px;
+        height: 279px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
     }
     .logo {
         border: none;
@@ -913,6 +926,32 @@ form {
         left: 3px;
         top: 14.2px;
     }
+    .burger_container .logo h1 {
+        color: #FE9013;
+        width: 58px;
+        height: 36px;
+        font-size: 15.21px;
+        line-height: 18.25px;
+        margin: 2.84px 3.8px;
+    }
+    .burger_container .logo img {
+        width: 10px;
+        height: 14.4px;
+        position: absolute;
+        left: 9px;
+        top: 20px;
+    }
+    .burger_container .logo a {
+        width: 58px;
+        height: 36px;
+    }
+    .burger_container .logo {
+        width: 63.6px;
+        height: 39.6px;
+        border: 0.8px #FE9013 solid;
+        align-self: flex-start;
+        margin-bottom: 30.4px;
+    }
     .text_of_header {
         display: none;
     }
@@ -922,6 +961,32 @@ form {
     }
     #design_by {
         display: none;
+    }
+    .burger_container #design_by {
+        display: block;
+        color: #333B41;
+        margin-left: 0;
+    }
+    .nav_of_burger {
+        display: flex;
+        flex-direction: column;
+        width: 77px;
+        height: 168px;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .nav_of_burger a {
+        width: 77px;
+        height: 22px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #333B41;
+    }
+    .nav_of_burger p {
+        background: #333B41;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     .burger {
         display: flex;
@@ -936,6 +1001,32 @@ form {
         height: 2px;
         border-radius: 2px;
         background: #FFFFFF;
+    }
+    .burger_container .burger {
+        position: absolute;
+        right: 20px;
+        width: 18px;
+        height: 18px;
+    }
+    .burger_container .burger div {
+        background: #333B41;
+        position: absolute;
+        top: 10px;
+    }
+    .burger_container .burger div:nth-child(2) {
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 329px);
+        right: -10px;
+        top: 329px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .burger_container .burger div:nth-child(1) {
+        transform: rotate(45deg);
+
+    }
+    .burger_container .burger div:nth-child(3) {
+        transform: rotate(-45deg);
     }
     #second_block {
         background-position-y: -34px;
@@ -1264,6 +1355,19 @@ form {
         position: fixed;
         z-index: 100;
     }
+    .white_container {
+        height: 289px;
+        background: #FFFFFF;
+        padding: 10px 0 40px 10px;
+    }
+    .burger_container {
+        width: 104px;
+        height: 279px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
     .logo {
         border: none;
         width: 46.86px;
@@ -1306,6 +1410,32 @@ form {
     }
     #design_by {
         display: none;
+    }
+    .burger_container #design_by {
+        display: block;
+        color: #333B41;
+        margin-left: 0;
+    }
+    .nav_of_burger {
+        display: flex;
+        flex-direction: column;
+        width: 77px;
+        height: 168px;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    .nav_of_burger a {
+        width: 77px;
+        height: 22px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #333B41;
+    }
+    .nav_of_burger p {
+        background: #333B41;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
     .burger {
         display: flex;
