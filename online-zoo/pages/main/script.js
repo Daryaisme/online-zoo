@@ -74,3 +74,17 @@ function addActiveComm() {
     })
     document.documentElement.style.overflowY = "hidden"
 }
+
+let range = document.getElementById('range');
+let rev = document.getElementById('reviews');
+let comments = document.querySelectorAll('.review');
+
+let gap = 28
+
+range.addEventListener('input', rangeComment)
+
+function rangeComment() {
+    let offset = this.value * (comments[0].offsetWidth + gap)
+    let str = `${-offset}` + 'px'
+    rev.style.marginLeft = str;
+}

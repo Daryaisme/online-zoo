@@ -47,17 +47,31 @@ input.oninput = function() {
     if (input.value.length > 4)
         input.value = input.value.substr(0, 4)
     let qua = 0;
+    let n = []
     numbers.forEach(number => {
-        if (parseInt(number.innerHTML.replace('$', '')) == input.value) {
-            numbers.forEach(number => {
-                number.classList.remove('active_number')
-            });
-            number.classList.add('active_number')
-            Array.from(points).forEach(point => {
-                point.classList.remove('active_point')
-            });
-            points[qua].checked = true
-        }
+        n[qua] = parseInt(number.innerHTML.replace('$', ''))
         qua++
     })
+    if (n.indexOf(parseInt(input.value)) != -1) {
+        Array.from(numbers).forEach(number => {
+            number.classList.remove('active_number')
+        });
+        numbers[n.indexOf(parseInt(input.value))].classList.add('active_number')
+        Array.from(points).forEach(point => {
+            point.classList.remove('active_point')
+        });
+        points[n.indexOf(parseInt(input.value))].classList.add('active_point')
+        points[n.indexOf(parseInt(input.value))].checked = true
+    }
+    else{
+        Array.from(numbers).forEach(number => {
+            number.classList.remove('active_number')
+        });
+        Array.from(points).forEach(point => {
+            point.classList.remove('active_point')
+        });
+        Array.from(points).forEach(point => {
+            point.checked = false
+        })
+    }
 }
