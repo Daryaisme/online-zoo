@@ -70,7 +70,7 @@
                                 <label for="radio2"> • </label>
                             </div>
                             <div class="active_zone">
-                                <input type="radio" class="point" name="point" id="radio3" checked>
+                                <input type="radio" class="point" name="point" id="radio3">
                                 <label for="radio3"> • </label>
                             </div>
                             <div class="active_zone">
@@ -82,7 +82,7 @@
                                 <label for="radio5"> • </label>
                             </div>
                             <div class="active_zone">
-                                <input type="radio" class="point" name="point" id="radio6">
+                                <input type="radio" class="point active_point" name="point" id="radio6" checked>
                                 <label for="radio6"> • </label>
                             </div>
                             <div class="active_zone">
@@ -97,15 +97,15 @@
                         <div id="money">
                             <p> $5000 </p>
                             <p> $2000 </p>
-                            <p style="color: #FE9013;"> $1000 </p>
+                            <p> $1000 </p>
                             <p> $500 </p>
                             <p> $250 </p>
-                            <p> $100 </p>
+                            <p class="active_number"> $100 </p>
                             <p> $50 </p>
                             <p> $25 </p>
                         </div>
                         <div id="number_money">
-                            <input type="number" min="25" max="5000" placeholder="Another amount" id="number1">
+                            <input type="number" min="25" max="5000" value="100" placeholder="Another amount" id="number1">
                             <label for="number 1">
                                 <img src="../../assets/images/dollar.svg" width="10px" height="20px">
                             </label>
@@ -176,5 +176,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
