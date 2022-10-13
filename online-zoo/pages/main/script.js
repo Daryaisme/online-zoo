@@ -14,6 +14,7 @@ function openBurgerMenu () {
     head[0].classList.add("white_container")
     cont[0].classList.add("burger_container")
     image[0].src = "../../assets/images/bamboo_orange.svg"
+    document.documentElement.style.overflowY = "hidden"
 }
 
 function closeBurgerMenu () {
@@ -21,33 +22,55 @@ function closeBurgerMenu () {
     head[0].classList.remove("white_container")
     cont[0].classList.remove("burger_container")
     image[0].src = "../../assets/images/bamboo.svg"
+    document.documentElement.style.overflowY = "visible"
 }
 
-let pet = document.querySelectorAll('.pet');
-let cor = document.querySelector('#pets .content')
+// let pet = document.querySelectorAll('.pet');
+// let cor = document.querySelector('#pets .content')
 
-document.querySelector('#left').addEventListener('click', clickLeftButton)
-document.querySelector('#right').addEventListener('click', clickRightButton)
+// document.querySelector('#left').addEventListener('click', clickLeftButton)
+// document.querySelector('#right').addEventListener('click', clickRightButton)
 
-function generatePage() {
-    let cont = document.createElement('div')
-    cont.classList.add('content_of_generate')
-    let row1 = document.createElement('div')
-    row1.classList.add('row_of_pets')
-    let row2 = document.createElement('div')
-    row2.classList.add('row_of_pets')
-    row1.append(pet[0].cloneNode(true), pet[1].cloneNode(true), pet[2].cloneNode(true))
-    row2.append(pet[3].cloneNode(true), pet[4].cloneNode(true), pet[5].cloneNode(true))
-    cont.append(row1, row2)
-    return cont
-}
+// function generatePage() {
+//     let cont = document.createElement('div')
+//     cont.classList.add('content_of_generate')
+//     let row1 = document.createElement('div')
+//     row1.classList.add('row_of_pets')
+//     let row2 = document.createElement('div')
+//     row2.classList.add('row_of_pets')
+//     row1.append(pet[0].cloneNode(true), pet[1].cloneNode(true), pet[2].cloneNode(true))
+//     row2.append(pet[3].cloneNode(true), pet[4].cloneNode(true), pet[5].cloneNode(true))
+//     cont.append(row1, row2)
+//     return cont
+// }
 
-function clickLeftButton () {
-    let newPage = generatePage()
-    cor.append(newPage)
-    newPage.addEventListener('')
-}
+// function clickLeftButton () {
+//     let newPage = generatePage()
+//     cor.append(newPage)
+//     newPage.addEventListener('')
+// }
 
-function clickRightButton () {
+// function clickRightButton () {
 
+// }
+
+let comms = document.getElementById('reviews')
+let comm = document.querySelectorAll('.review')
+
+comm.forEach(com => com.addEventListener('click', addActiveComm))
+
+function addActiveComm() {
+    if (window.screen.width > 999) {
+        return
+    }
+    let d = document.createElement('div')
+    let review = this.cloneNode(true)
+    d.append(review)
+    document.body.prepend(d)
+    d.classList.add('active_comm')
+    d.addEventListener('click', function(e) {
+        d.remove()
+        document.documentElement.style.overflowY = "visible"
+    })
+    document.documentElement.style.overflowY = "hidden"
 }

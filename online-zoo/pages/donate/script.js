@@ -14,6 +14,7 @@ function openBurgerMenu () {
     head[0].classList.add("white_container")
     cont[0].classList.add("burger_container")
     image[0].src = "../../assets/images/bamboo_orange.svg"
+    document.documentElement.style.overflowY = "hidden"
 }
 
 function closeBurgerMenu () {
@@ -21,6 +22,7 @@ function closeBurgerMenu () {
     head[0].classList.remove("white_container")
     cont[0].classList.remove("burger_container")
     image[0].src = "../../assets/images/bamboo.svg"
+    document.documentElement.style.overflowY = "visible"
 }
 
 let cont_of_points = document.querySelector('.points')
