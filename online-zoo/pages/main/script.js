@@ -79,11 +79,17 @@ let range = document.getElementById('range');
 let rev = document.getElementById('reviews');
 let comments = document.querySelectorAll('.review');
 
-let gap = 28
+let gap = 0
 
 range.addEventListener('input', rangeComment)
 
 function rangeComment() {
+    if (window.screen.width > 999 && window.screen.width < 1600) {
+        gap = 24
+    }
+    else {
+        gap = 28
+    }
     let offset = this.value * (comments[0].offsetWidth + gap)
     let str = `${-offset}` + 'px'
     rev.style.marginLeft = str;
