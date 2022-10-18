@@ -208,18 +208,29 @@ a[class="button"]:disabled {
     padding-top: 40px;
     padding-bottom: 100px;
 }
-#pets .content, .content_of_generate {
+#pets .content > div, .content_of_generate {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 1158px;
+    width: 1160px;
     height: 872px;
-    animation: 0.5s ease-in-out;
+}
+.active_pet {
+    margin-left: 0;
+    transition: all 0.5s ease-in-out;
+}
+.passive_pet_left {
+    margin-left: -1160px;
+    transition: all 0.5s ease-in-out;
+}
+#pets .content {
+    display: flex;
+    overflow: hidden;
 }
 .row_of_pets {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 30px;
     margin: 0;
 }
 .pet {
@@ -291,7 +302,7 @@ a[class="pet"]:hover img {
     height: 62px;
     width: 62px;
 }
-#for_arrow a:active #left_arrow, #for_arrow a:active #right_arrow {
+#for_arrow button:active #left_arrow, #for_arrow button:active #right_arrow {
     background: #4B9200;
 }
 #left_arrow img, #right_arrow img {
@@ -309,35 +320,6 @@ a[class="pet"]:hover img {
     align-items: center;
     justify-content: space-between;
     width: 1322px;
-}
-.to-left {
-    animation-name: left;
-}
-.to-right {
-    animation-name: right;
-    animation-direction: reverse;
-}
-.from-left {
-    animation-name: left;
-}
-.from-rigth {
-    animation-name: right;
-}
-@keyframes left {
-    from {
-        left: 0;
-    }
-    to {
-        left: -100%;
-    }
-}
-@keyframes right {
-    from {
-        left: 100%;
-    }
-    to {
-        left: 0;
-    }
 }
 #fifth_block {
     background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
@@ -766,9 +748,12 @@ form {
         padding-top: 42px;
         padding-bottom: 140px;
     }
-    #pets .content, .content_of_generate {
+    #pets .content > div, .content_of_generate {
         width: 940px;
         height: 801px;
+    }
+    .passive_pet_left {
+        margin-left: -940px;
     }
     .pet {
         width: 294px;
@@ -1144,10 +1129,13 @@ form {
         padding-top: 25px;
         padding-bottom: 100px;
     }
-    #pets .content, .content_of_generate {
+    #pets .content > div, .content_of_generate {
         width: 600px;
         height: 756px;
         margin-bottom: 60px;
+    }
+    .passive_pet_left {
+        margin-left: 600px;
     }
     .pet:nth-child(3) {
         display: none;
@@ -1621,7 +1609,7 @@ form {
         padding-top: 0;
         padding-bottom: 60px;
     }
-    #pets .content, .content_of_generate {
+    #pets .content > div, .content_of_generate {
         width: 285.24px;
         height: 1388px;
         margin-bottom: 22px;

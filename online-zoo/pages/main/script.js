@@ -25,34 +25,75 @@ function closeBurgerMenu () {
     document.documentElement.style.overflowY = "visible"
 }
 
-// let pet = document.querySelectorAll('.pet');
-// let cor = document.querySelector('#pets .content')
+let pet = document.querySelectorAll('.pet');
+let cor = document.querySelector('#pets .content')
 
-// document.querySelector('#left').addEventListener('click', clickLeftButton)
-// document.querySelector('#right').addEventListener('click', clickRightButton)
+document.querySelector('#left').addEventListener('click', clickLeftButton)
+document.querySelector('#right').addEventListener('click', clickRightButton)
 
-// function generatePage() {
-//     let cont = document.createElement('div')
-//     cont.classList.add('content_of_generate')
-//     let row1 = document.createElement('div')
-//     row1.classList.add('row_of_pets')
-//     let row2 = document.createElement('div')
-//     row2.classList.add('row_of_pets')
-//     row1.append(pet[0].cloneNode(true), pet[1].cloneNode(true), pet[2].cloneNode(true))
-//     row2.append(pet[3].cloneNode(true), pet[4].cloneNode(true), pet[5].cloneNode(true))
-//     cont.append(row1, row2)
-//     return cont
-// }
+function generatePage(direction) {
+    let cont = document.createElement('div')
+    cont.classList.add('content_of_generate')
+    let row1 = document.createElement('div')
+    row1.classList.add('row_of_pets')
+    let row2 = document.createElement('div')
+    row2.classList.add('row_of_pets')
+    let arr = [];
+    let randomNum;
+    for (let i = 0; i < 6; i++) {
+        randomNum = Math.trunc(Math.random() * 6);
+        if (!arr.includes(randomNum)) 
+            arr.push(randomNum);
+        else 
+            i--;
+    }
+    row1.append(pet[arr[0]].cloneNode(true), pet[arr[1]].cloneNode(true), pet[arr[2]].cloneNode(true))
+    row2.append(pet[arr[3]].cloneNode(true), pet[arr[4]].cloneNode(true), pet[arr[5]].cloneNode(true))
+    cont.append(row1, row2)
+    if (direction == right) {
+        cont.classList.add('passive_pet_right')
+    }
+    else {
+        cont.classList.add('passive_pet_left')
+    }
+    return cont
+}
 
-// function clickLeftButton () {
-//     let newPage = generatePage()
-//     cor.append(newPage)
-//     newPage.addEventListener('')
-// }
+function clickRightButton () {
+    cor.append(generatePage(right))
+    let to_left = document.querySelector('.active_pet')
+    let from_rigth = document.querySelector('.passive_pet_right')
+    let offset = cor.offsetWidth
+    let str = `${-offset}` + 'px'
+    to_left.style.marginLeft = str
+    document.querySelector('#left').style.pointerEvents = 'none'
+    document.querySelector('#right').style.pointerEvents = 'none'
+    setTimeout(function() {
+        to_left.remove()
+        from_rigth.classList.remove('passive_pet_right')
+        from_rigth.classList.add('active_pet')
+        document.querySelector('#left').style.pointerEvents = 'all'
+        document.querySelector('#right').style.pointerEvents = 'all'
+    }, 500)
+}
 
-// function clickRightButton () {
-
-// }
+function clickLeftButton () {
+    cor.prepend(generatePage(left))
+    let to_right = document.querySelector('.active_pet')
+    let from_left = document.querySelector('.passive_pet_left')
+    let offset = cor.offsetWidth
+    let str = 0 + 'px'
+    from_left.style.marginLeft = str
+    document.querySelector('#left').style.pointerEvents = 'none'
+    document.querySelector('#right').style.pointerEvents = 'none'
+    setTimeout(function() {
+        to_right.remove()
+        from_left.classList.remove('passive_pet_left')
+        from_left.classList.add('active_pet')
+        document.querySelector('#left').style.pointerEvents = 'all'
+        document.querySelector('#right').style.pointerEvents = 'all'
+    }, 500)
+}
 
 let comms = document.getElementById('reviews')
 let comm = document.querySelectorAll('.review')
