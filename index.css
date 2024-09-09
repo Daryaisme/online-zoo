@@ -301,6 +301,7 @@ a[class="pet"]:hover img {
     border-radius: 50%;
     height: 62px;
     width: 62px;
+    cursor: pointer;
 }
 #for_arrow button:active #left_arrow, #for_arrow button:active #right_arrow {
     background: #4B9200;

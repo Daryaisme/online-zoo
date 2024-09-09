@@ -13,7 +13,7 @@ function openBurgerMenu () {
     nav[0].classList.add("nav_of_burger")
     head[0].classList.add("white_container")
     cont[0].classList.add("burger_container")
-    image[0].src = "../../assets/images/bamboo_orange.svg"
+    image[0].src = "assets/images/bamboo_orange.svg"
     document.documentElement.style.overflowY = "hidden"
 }
 
@@ -21,7 +21,7 @@ function closeBurgerMenu () {
     nav[0].classList.remove("nav_of_burger")
     head[0].classList.remove("white_container")
     cont[0].classList.remove("burger_container")
-    image[0].src = "../../assets/images/bamboo.svg"
+    image[0].src = "assets/images/bamboo.svg"
     document.documentElement.style.overflowY = "visible"
 }
 
